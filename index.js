@@ -23,7 +23,7 @@ const cleanList = () => {
   let cleaned = [];
   for (let i = 0; i < guests.length; i++) {
     if (guests[i] !== ""){
-        cleaned.push(guests[i]);
+        cleaned.splice(guests.indexOf(guests[i]), 0, guests[i]);
     }
   }
   return cleaned;
